@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/black/Desktop/micropython/cpico/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

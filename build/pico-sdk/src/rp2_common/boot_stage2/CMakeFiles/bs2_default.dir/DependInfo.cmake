@@ -1,14 +1,10 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "ASM"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/black/Desktop/micropython/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S" "/home/black/Desktop/micropython/cpico/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj"
+  "/home/willbroad/pico-sdk/src/rp2_common/boot_stage2/compile_time_choice.S" "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -22,18 +18,14 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "/home/black/Desktop/micropython/pico-sdk/src/rp2_common/boot_stage2/asminclude"
-  "/home/black/Desktop/micropython/pico-sdk/src/rp2040/hardware_regs/include"
-  "/home/black/Desktop/micropython/pico-sdk/src/rp2_common/hardware_base/include"
-  "/home/black/Desktop/micropython/pico-sdk/src/common/pico_base/include"
+  "/home/willbroad/pico-sdk/src/rp2_common/boot_stage2/asminclude"
+  "/home/willbroad/pico-sdk/src/rp2040/hardware_regs/include"
+  "/home/willbroad/pico-sdk/src/rp2_common/hardware_base/include"
+  "/home/willbroad/pico-sdk/src/common/pico_base/include"
   "generated/pico_base"
-  "/home/black/Desktop/micropython/pico-sdk/src/boards/include"
-  "/home/black/Desktop/micropython/pico-sdk/src/rp2_common/pico_platform/include"
-  "/home/black/Desktop/micropython/pico-sdk/src/rp2_common/boot_stage2/include"
-  )
-
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/willbroad/pico-sdk/src/boards/include"
+  "/home/willbroad/pico-sdk/src/rp2_common/pico_platform/include"
+  "/home/willbroad/pico-sdk/src/rp2_common/boot_stage2/include"
   )
 
 # Targets to which this target links.

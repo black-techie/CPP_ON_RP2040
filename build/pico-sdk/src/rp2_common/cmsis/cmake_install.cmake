@@ -1,4 +1,4 @@
-# Install script for directory: /home/black/Desktop/micropython/pico-sdk/src/rp2_common/cmsis
+# Install script for directory: /home/willbroad/pico-sdk/src/rp2_common/cmsis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

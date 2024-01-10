@@ -1,4 +1,4 @@
-# Install script for directory: /home/black/Desktop/micropython/pico-sdk/src
+# Install script for directory: /home/willbroad/pico-sdk/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/black/Desktop/micropython/cpico/build/pico-sdk/src/common/cmake_install.cmake")
-  include("/home/black/Desktop/micropython/cpico/build/pico-sdk/src/rp2_common/cmake_install.cmake")
-  include("/home/black/Desktop/micropython/cpico/build/pico-sdk/src/rp2040/cmake_install.cmake")
+  include("/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/pico-sdk/src/common/cmake_install.cmake")
+  include("/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/pico-sdk/src/rp2_common/cmake_install.cmake")
+  include("/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/pico-sdk/src/rp2040/cmake_install.cmake")
 
 endif()
 

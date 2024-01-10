@@ -1,4 +1,4 @@
-# Install script for directory: /home/black/Desktop/micropython/pico-sdk/src/rp2_common/hardware_timer
+# Install script for directory: /home/willbroad/pico-sdk/src/rp2_common/hardware_timer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
