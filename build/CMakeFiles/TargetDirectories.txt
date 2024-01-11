@@ -1,7 +1,7 @@
 /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/rebuild_cache.dir
 /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/edit_cache.dir
 /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/ELF2UF2Build.dir
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/blink.dir
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/main.dir
 /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/pico-sdk/CMakeFiles/rebuild_cache.dir
 /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/pico-sdk/CMakeFiles/edit_cache.dir
 /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/pico-sdk/tools/CMakeFiles/rebuild_cache.dir

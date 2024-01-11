@@ -143,17 +143,17 @@ ELF2UF2Build/fast:
 .PHONY : ELF2UF2Build/fast
 
 #=============================================================================
-# Target rules for targets named blink
+# Target rules for targets named main
 
 # Build rule for target.
-blink: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink
-.PHONY : blink
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-blink/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/build
-.PHONY : blink/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default_padded_checksummed_asm
@@ -194,40 +194,13 @@ bs2_default/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
 .PHONY : bs2_default/fast
 
-blink.obj: blink.c.obj
-
-.PHONY : blink.obj
-
-# target to build an object file
-blink.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/blink.c.obj
-.PHONY : blink.c.obj
-
-blink.i: blink.c.i
-
-.PHONY : blink.i
-
-# target to preprocess a source file
-blink.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/blink.c.i
-.PHONY : blink.c.i
-
-blink.s: blink.c.s
-
-.PHONY : blink.s
-
-# target to generate assembly for a file
-blink.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/blink.c.s
-.PHONY : blink.c.s
-
 home/willbroad/pico-sdk/src/common/pico_sync/critical_section.obj: home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/critical_section.obj
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_sync/critical_section.i: home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -236,7 +209,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/critical_section.i: home/willbroad/
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/willbroad/pico-sdk/src/common/pico_sync/critical_section.s: home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -245,7 +218,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/critical_section.s: home/willbroad/
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/willbroad/pico-sdk/src/common/pico_sync/lock_core.obj: home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -254,7 +227,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/lock_core.obj: home/willbroad/pico-
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_sync/lock_core.i: home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -263,7 +236,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/lock_core.i: home/willbroad/pico-sd
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/willbroad/pico-sdk/src/common/pico_sync/lock_core.s: home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -272,7 +245,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/lock_core.s: home/willbroad/pico-sd
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/willbroad/pico-sdk/src/common/pico_sync/mutex.obj: home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -281,7 +254,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/mutex.obj: home/willbroad/pico-sdk/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_sync/mutex.i: home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -290,7 +263,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/mutex.i: home/willbroad/pico-sdk/sr
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/willbroad/pico-sdk/src/common/pico_sync/mutex.s: home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -299,7 +272,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/mutex.s: home/willbroad/pico-sdk/sr
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/willbroad/pico-sdk/src/common/pico_sync/sem.obj: home/willbroad/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -308,7 +281,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/sem.obj: home/willbroad/pico-sdk/sr
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_sync/sem.i: home/willbroad/pico-sdk/src/common/pico_sync/sem.c.i
@@ -317,7 +290,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/sem.i: home/willbroad/pico-sdk/src/
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/willbroad/pico-sdk/src/common/pico_sync/sem.s: home/willbroad/pico-sdk/src/common/pico_sync/sem.c.s
@@ -326,7 +299,7 @@ home/willbroad/pico-sdk/src/common/pico_sync/sem.s: home/willbroad/pico-sdk/src/
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/willbroad/pico-sdk/src/common/pico_time/time.obj: home/willbroad/pico-sdk/src/common/pico_time/time.c.obj
@@ -335,7 +308,7 @@ home/willbroad/pico-sdk/src/common/pico_time/time.obj: home/willbroad/pico-sdk/s
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_time/time.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_time/time.i: home/willbroad/pico-sdk/src/common/pico_time/time.c.i
@@ -344,7 +317,7 @@ home/willbroad/pico-sdk/src/common/pico_time/time.i: home/willbroad/pico-sdk/src
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_time/time.c.i
 
 home/willbroad/pico-sdk/src/common/pico_time/time.s: home/willbroad/pico-sdk/src/common/pico_time/time.c.s
@@ -353,7 +326,7 @@ home/willbroad/pico-sdk/src/common/pico_time/time.s: home/willbroad/pico-sdk/src
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_time/time.c.s
 
 home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.obj: home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -362,7 +335,7 @@ home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.obj: home/willbroad/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.i: home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -371,7 +344,7 @@ home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.i: home/willbroad/pi
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.s: home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -380,7 +353,7 @@ home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.s: home/willbroad/pi
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/willbroad/pico-sdk/src/common/pico_util/datetime.obj: home/willbroad/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -389,7 +362,7 @@ home/willbroad/pico-sdk/src/common/pico_util/datetime.obj: home/willbroad/pico-s
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_util/datetime.i: home/willbroad/pico-sdk/src/common/pico_util/datetime.c.i
@@ -398,7 +371,7 @@ home/willbroad/pico-sdk/src/common/pico_util/datetime.i: home/willbroad/pico-sdk
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/willbroad/pico-sdk/src/common/pico_util/datetime.s: home/willbroad/pico-sdk/src/common/pico_util/datetime.c.s
@@ -407,7 +380,7 @@ home/willbroad/pico-sdk/src/common/pico_util/datetime.s: home/willbroad/pico-sdk
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/willbroad/pico-sdk/src/common/pico_util/pheap.obj: home/willbroad/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -416,7 +389,7 @@ home/willbroad/pico-sdk/src/common/pico_util/pheap.obj: home/willbroad/pico-sdk/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_util/pheap.i: home/willbroad/pico-sdk/src/common/pico_util/pheap.c.i
@@ -425,7 +398,7 @@ home/willbroad/pico-sdk/src/common/pico_util/pheap.i: home/willbroad/pico-sdk/sr
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/willbroad/pico-sdk/src/common/pico_util/pheap.s: home/willbroad/pico-sdk/src/common/pico_util/pheap.c.s
@@ -434,7 +407,7 @@ home/willbroad/pico-sdk/src/common/pico_util/pheap.s: home/willbroad/pico-sdk/sr
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/willbroad/pico-sdk/src/common/pico_util/queue.obj: home/willbroad/pico-sdk/src/common/pico_util/queue.c.obj
@@ -443,7 +416,7 @@ home/willbroad/pico-sdk/src/common/pico_util/queue.obj: home/willbroad/pico-sdk/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/willbroad/pico-sdk/src/common/pico_util/queue.i: home/willbroad/pico-sdk/src/common/pico_util/queue.c.i
@@ -452,7 +425,7 @@ home/willbroad/pico-sdk/src/common/pico_util/queue.i: home/willbroad/pico-sdk/sr
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/queue.c.i
 
 home/willbroad/pico-sdk/src/common/pico_util/queue.s: home/willbroad/pico-sdk/src/common/pico_util/queue.c.s
@@ -461,7 +434,7 @@ home/willbroad/pico-sdk/src/common/pico_util/queue.s: home/willbroad/pico-sdk/sr
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/willbroad/pico-sdk/src/common/pico_util/queue.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -470,7 +443,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/willbroad/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -479,7 +452,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/willbroad/pi
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -488,7 +461,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/willbroad/pi
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -497,7 +470,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/willbroa
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -506,7 +479,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/willbroad/
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -515,7 +488,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/willbroad/
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -524,7 +497,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/willbr
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -533,7 +506,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/willbroad/pi
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -542,7 +515,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/willbroad/pico
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -551,8 +524,35 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/willbroad/pico
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+
+home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
@@ -560,7 +560,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/willbroad/pico
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -569,7 +569,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/willbroad/pico-s
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -578,7 +578,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/willbroad/pico-s
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -587,7 +587,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -596,7 +596,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/willbroad/pico
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -605,7 +605,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/willbroad/pico-s
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -614,8 +614,35 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/willbroad/pico-s
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+
+home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.obj
+
+# target to build an object file
+home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+
+home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.i: home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.i
+
+# target to preprocess a source file
+home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+
+home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.s: home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.s
+
+# target to generate assembly for a file
+home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
@@ -623,7 +650,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/willbroad/pi
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -632,7 +659,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/willbroad/pico
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -641,7 +668,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/willbroad/pico
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -650,7 +677,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/willbroad/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -659,7 +686,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/willbroad/pi
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -668,7 +695,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/willbroad/pi
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -677,7 +704,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/willbroad/pi
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -686,7 +713,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/willbroad/pico
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -695,7 +722,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/willbroad/pico
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -704,7 +731,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/willbroad/pi
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -713,7 +740,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/willbroad/pico
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -722,7 +749,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/willbroad/pico
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -731,7 +758,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/will
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -740,7 +767,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/willbr
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -749,7 +776,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/willbr
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -758,7 +785,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/willbroad/pi
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -767,7 +794,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/willbroad/pico
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -776,7 +803,7 @@ home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/willbroad/pico
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/willbroad/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -785,7 +812,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/will
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -794,7 +821,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/willbroad/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -803,7 +830,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/willbroad/pi
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -812,7 +839,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/willbroad/pi
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/willbroad/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -821,7 +848,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/willbroad/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/willbroad/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -830,7 +857,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/willbr
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -839,7 +866,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/wil
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -848,7 +875,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/willb
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -857,7 +884,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/willb
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -866,7 +893,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/willbro
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.i: home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -875,7 +902,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.i: home/willbroad
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.s: home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -884,7 +911,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.s: home/willbroad
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/willbroad/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -893,7 +920,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/willbroad/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -902,7 +929,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/willbroa
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -911,7 +938,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/willb
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -920,7 +947,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/willbro
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -929,7 +956,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/willbro
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -938,7 +965,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/willbroad
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.i: home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -947,7 +974,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.i: home/willbroad/p
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.s: home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -956,7 +983,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.s: home/willbroad/p
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/willbroad/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -965,7 +992,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/wi
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/willbroad/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -974,7 +1001,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: 
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -983,7 +1010,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/willbro
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -992,7 +1019,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/willbroad
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1001,7 +1028,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/willbroad
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/willbroad/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1010,7 +1037,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/will
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1019,7 +1046,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/willbroa
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.i: home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1028,7 +1055,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.i: home/willbroad/
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.s: home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1037,7 +1064,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.s: home/willbroad/
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1046,7 +1073,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/willbroad/pi
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.i: home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1055,7 +1082,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.i: home/willbroad/pico
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.s: home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1064,7 +1091,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.s: home/willbroad/pico
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1073,7 +1100,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/willbroad/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1082,7 +1109,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/willbroad/pi
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1091,7 +1118,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/willbroad/pi
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1100,7 +1127,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1109,7 +1136,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/wi
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1118,7 +1145,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/wi
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1127,7 +1154,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/willbro
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1136,7 +1163,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/w
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1145,7 +1172,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/wil
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1154,7 +1181,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/wil
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1163,7 +1190,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/willbroad/pico
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1172,7 +1199,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/willbroad/pico-s
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1181,7 +1208,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/willbroad/pico-s
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1190,7 +1217,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/will
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1199,7 +1226,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/willbr
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1208,7 +1235,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/willbr
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1217,7 +1244,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/willbroad/pi
 
 # target to build an object file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1226,7 +1253,7 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/willbroad/pico
 
 # target to preprocess a source file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1235,8 +1262,35 @@ home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/willbroad/pico
 
 # target to generate assembly for a file
 home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/blink.dir/build.make CMakeFiles/blink.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+main.obj: main.cpp.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -1249,11 +1303,8 @@ help:
 	@echo "... ELF2UF2Build"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default_padded_checksummed_asm"
-	@echo "... blink"
 	@echo "... bs2_default"
-	@echo "... blink.obj"
-	@echo "... blink.i"
-	@echo "... blink.s"
+	@echo "... main"
 	@echo "... home/willbroad/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/willbroad/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/willbroad/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1291,6 +1342,9 @@ help:
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_irq/irq.s"
@@ -1298,6 +1352,9 @@ help:
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_pll/pll.s"
+	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.obj"
+	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.i"
+	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.s"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.i"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/hardware_sync/sync.s"
@@ -1367,6 +1424,9 @@ help:
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... main.obj"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
