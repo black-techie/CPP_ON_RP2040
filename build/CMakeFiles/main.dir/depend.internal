@@ -1029,6 +1029,89 @@ CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.
  /home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
+CMakeFiles/main.dir/MFRC522.cpp.obj
+ /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.cpp
+ /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.h
+ /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.h
+ /home/willbroad/pico-sdk/src/boards/include/boards/pico.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico/assert.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico/config.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico/error.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico/types.h
+ /home/willbroad/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
+ /home/willbroad/pico-sdk/src/common/pico_time/include/pico/time.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
+ /home/willbroad/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
+ /home/willbroad/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+ /home/willbroad/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
+ /home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+ generated/pico_base/pico/config_autogen.h
+ generated/pico_base/pico/version.h
+CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj
+ /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.cpp
+ /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.h
+ /home/willbroad/pico-sdk/src/boards/include/boards/pico.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico/assert.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico/config.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico/error.h
+ /home/willbroad/pico-sdk/src/common/pico_base/include/pico/types.h
+ /home/willbroad/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
+ /home/willbroad/pico-sdk/src/common/pico_time/include/pico/time.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
+ /home/willbroad/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
+ /home/willbroad/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+ /home/willbroad/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
+ /home/willbroad/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+ generated/pico_base/pico/config_autogen.h
+ generated/pico_base/pico/version.h
 CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
  /home/willbroad/pico-sdk/src/boards/include/boards/pico.h
  /home/willbroad/pico-sdk/src/common/pico_base/include/pico.h
@@ -1045,6 +1128,8 @@ CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/ne
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
 CMakeFiles/main.dir/main.cpp.obj
+ /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.h
+ /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.h
  /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/lcd_i2c.cpp
  /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/main.cpp
  /home/willbroad/pico-sdk/src/boards/include/boards/pico.h
@@ -1068,6 +1153,7 @@ CMakeFiles/main.dir/main.cpp.obj
  /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
@@ -1075,6 +1161,7 @@ CMakeFiles/main.dir/main.cpp.obj
  /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
+ /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
  /home/willbroad/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
  /home/willbroad/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
@@ -1082,6 +1169,7 @@ CMakeFiles/main.dir/main.cpp.obj
  /home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
  /home/willbroad/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
  /home/willbroad/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
+ /home/willbroad/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
  /home/willbroad/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
  /home/willbroad/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
  /home/willbroad/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/MFRC522.cpp.obj"
+  "CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj"
   "CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.obj"
   "CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/lock_core.c.obj"
   "CMakeFiles/main.dir/home/willbroad/pico-sdk/src/common/pico_sync/mutex.c.obj"

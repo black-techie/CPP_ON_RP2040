@@ -194,6 +194,60 @@ bs2_default/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
 .PHONY : bs2_default/fast
 
+MFRC522.obj: MFRC522.cpp.obj
+
+.PHONY : MFRC522.obj
+
+# target to build an object file
+MFRC522.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/MFRC522.cpp.obj
+.PHONY : MFRC522.cpp.obj
+
+MFRC522.i: MFRC522.cpp.i
+
+.PHONY : MFRC522.i
+
+# target to preprocess a source file
+MFRC522.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/MFRC522.cpp.i
+.PHONY : MFRC522.cpp.i
+
+MFRC522.s: MFRC522.cpp.s
+
+.PHONY : MFRC522.s
+
+# target to generate assembly for a file
+MFRC522.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/MFRC522.cpp.s
+.PHONY : MFRC522.cpp.s
+
+MFRC522_RP2040.obj: MFRC522_RP2040.cpp.obj
+
+.PHONY : MFRC522_RP2040.obj
+
+# target to build an object file
+MFRC522_RP2040.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj
+.PHONY : MFRC522_RP2040.cpp.obj
+
+MFRC522_RP2040.i: MFRC522_RP2040.cpp.i
+
+.PHONY : MFRC522_RP2040.i
+
+# target to preprocess a source file
+MFRC522_RP2040.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/MFRC522_RP2040.cpp.i
+.PHONY : MFRC522_RP2040.cpp.i
+
+MFRC522_RP2040.s: MFRC522_RP2040.cpp.s
+
+.PHONY : MFRC522_RP2040.s
+
+# target to generate assembly for a file
+MFRC522_RP2040.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/MFRC522_RP2040.cpp.s
+.PHONY : MFRC522_RP2040.cpp.s
+
 home/willbroad/pico-sdk/src/common/pico_sync/critical_section.obj: home/willbroad/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 .PHONY : home/willbroad/pico-sdk/src/common/pico_sync/critical_section.obj
@@ -1305,6 +1359,12 @@ help:
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... bs2_default"
 	@echo "... main"
+	@echo "... MFRC522.obj"
+	@echo "... MFRC522.i"
+	@echo "... MFRC522.s"
+	@echo "... MFRC522_RP2040.obj"
+	@echo "... MFRC522_RP2040.i"
+	@echo "... MFRC522_RP2040.s"
 	@echo "... home/willbroad/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/willbroad/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/willbroad/pico-sdk/src/common/pico_sync/critical_section.s"

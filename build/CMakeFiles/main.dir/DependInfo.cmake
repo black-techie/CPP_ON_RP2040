@@ -228,6 +228,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/willbroad/pico-sdk/src/rp2_common/hardware_spi/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.cpp" "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/main.dir/MFRC522.cpp.obj"
+  "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.cpp" "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj"
   "/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
   "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/main.cpp" "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles/main.dir/main.cpp.obj"
   )
