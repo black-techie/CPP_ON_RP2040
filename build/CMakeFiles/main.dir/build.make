@@ -89,31 +89,31 @@ CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/main.cpp" -o CMakeFiles/main.dir/main.cpp.s
 
-CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj: ../MFRC522_RP2040.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj -c "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.cpp"
+CMakeFiles/main.dir/services/MFRC522_.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/services/MFRC522_.cpp.obj: ../services/MFRC522_.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/services/MFRC522_.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/services/MFRC522_.cpp.obj -c "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522_.cpp"
 
-CMakeFiles/main.dir/MFRC522_RP2040.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/MFRC522_RP2040.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.cpp" > CMakeFiles/main.dir/MFRC522_RP2040.cpp.i
+CMakeFiles/main.dir/services/MFRC522_.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/services/MFRC522_.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522_.cpp" > CMakeFiles/main.dir/services/MFRC522_.cpp.i
 
-CMakeFiles/main.dir/MFRC522_RP2040.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/MFRC522_RP2040.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.cpp" -o CMakeFiles/main.dir/MFRC522_RP2040.cpp.s
+CMakeFiles/main.dir/services/MFRC522_.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/services/MFRC522_.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522_.cpp" -o CMakeFiles/main.dir/services/MFRC522_.cpp.s
 
-CMakeFiles/main.dir/MFRC522.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/MFRC522.cpp.obj: ../MFRC522.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/MFRC522.cpp.obj"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/MFRC522.cpp.obj -c "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.cpp"
+CMakeFiles/main.dir/services/MFRC522.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/services/MFRC522.cpp.obj: ../services/MFRC522.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/services/MFRC522.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/services/MFRC522.cpp.obj -c "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522.cpp"
 
-CMakeFiles/main.dir/MFRC522.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/MFRC522.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.cpp" > CMakeFiles/main.dir/MFRC522.cpp.i
+CMakeFiles/main.dir/services/MFRC522.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/services/MFRC522.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522.cpp" > CMakeFiles/main.dir/services/MFRC522.cpp.i
 
-CMakeFiles/main.dir/MFRC522.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/MFRC522.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.cpp" -o CMakeFiles/main.dir/MFRC522.cpp.s
+CMakeFiles/main.dir/services/MFRC522.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/services/MFRC522.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522.cpp" -o CMakeFiles/main.dir/services/MFRC522.cpp.s
 
 CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -641,8 +641,8 @@ CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.obj" \
-"CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj" \
-"CMakeFiles/main.dir/MFRC522.cpp.obj" \
+"CMakeFiles/main.dir/services/MFRC522_.cpp.obj" \
+"CMakeFiles/main.dir/services/MFRC522.cpp.obj" \
 "CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
@@ -695,8 +695,8 @@ main_OBJECTS = \
 main_EXTERNAL_OBJECTS =
 
 main.elf: CMakeFiles/main.dir/main.cpp.obj
-main.elf: CMakeFiles/main.dir/MFRC522_RP2040.cpp.obj
-main.elf: CMakeFiles/main.dir/MFRC522.cpp.obj
+main.elf: CMakeFiles/main.dir/services/MFRC522_.cpp.obj
+main.elf: CMakeFiles/main.dir/services/MFRC522.cpp.obj
 main.elf: CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 main.elf: CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 main.elf: CMakeFiles/main.dir/home/willbroad/pico-sdk/src/rp2_common/pico_platform/platform.c.obj

@@ -6,37 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.h
-stdint.h
--
-MFRC522_RP2040.h
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.h
-
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522_RP2040.h
-pico/stdlib.h
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/pico/stdlib.h
-hardware/gpio.h
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/hardware/gpio.h
-hardware/spi.h
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/hardware/spi.h
-
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/lcd_i2c.cpp
-hardware/i2c.h
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/hardware/i2c.h
-pico/binary_info.h
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/pico/binary_info.h
-
 /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/main.cpp
-stdio.h
--
 pico/stdlib.h
 /home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/pico/stdlib.h
-lcd_i2c.cpp
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/lcd_i2c.cpp
-MFRC522.h
-/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/MFRC522.h
+services/lcd_i2c.cpp
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/lcd_i2c.cpp
+services/MFRC522.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522.h
 string
 -
+
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522.cpp
+MFRC522.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522.h
+
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522.h
+stdint.h
+-
+MFRC522_.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522_.h
+
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522_.cpp
+MFRC522_.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522_.h
+
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/MFRC522_.h
+pico/stdlib.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/pico/stdlib.h
+hardware/gpio.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/hardware/gpio.h
+hardware/spi.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/hardware/spi.h
+
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/lcd_i2c.cpp
+hardware/i2c.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/hardware/i2c.h
+pico/binary_info.h
+/home/willbroad/Desktop/work/RASPBERRY PI/pico/coin_water_meter/CPP_ON_RP2040/services/pico/binary_info.h
 
 /home/willbroad/pico-sdk/src/boards/include/boards/pico.h
 
@@ -269,6 +275,12 @@ sys/cdefs.h
 -
 pico/types.h
 /home/willbroad/pico-sdk/src/rp2_common/pico_platform/include/pico/pico/types.h
+
+/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
+cstdlib
+-
+pico.h
+/home/willbroad/pico-sdk/src/rp2_common/pico_standard_link/pico.h
 
 /home/willbroad/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
 pico.h
