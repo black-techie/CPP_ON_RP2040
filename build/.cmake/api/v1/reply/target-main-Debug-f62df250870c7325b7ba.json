@@ -41,7 +41,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 24,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
@@ -62,7 +62,7 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 31,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
@@ -442,10 +442,6 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/black/pico-sdk/src/rp2_common/hardware_i2c/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/black/pico-sdk/src/rp2_common/hardware_spi/include"
 				}
 			],
 			"language" : "CXX",
@@ -460,9 +456,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2,
-				44
+				42
 			]
 		},
 		{
@@ -788,10 +782,6 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/black/pico-sdk/src/rp2_common/hardware_i2c/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/black/pico-sdk/src/rp2_common/hardware_spi/include"
 				}
 			],
 			"language" : "C",
@@ -805,12 +795,14 @@
 			},
 			"sourceIndexes" : 
 			[
+				1,
+				2,
 				3,
 				4,
 				5,
 				6,
-				7,
 				8,
+				9,
 				10,
 				11,
 				12,
@@ -825,21 +817,18 @@
 				21,
 				22,
 				23,
-				24,
 				25,
-				27,
+				26,
 				28,
-				30,
-				33,
-				34,
-				38,
+				31,
+				32,
+				36,
+				37,
 				39,
-				41,
+				43,
+				44,
 				45,
-				46,
-				47,
-				48,
-				49
+				46
 			]
 		},
 		{
@@ -1165,26 +1154,22 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/black/pico-sdk/src/rp2_common/hardware_i2c/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/Users/black/pico-sdk/src/rp2_common/hardware_spi/include"
 				}
 			],
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				9,
-				26,
+				7,
+				24,
+				27,
 				29,
-				31,
-				32,
+				30,
+				33,
+				34,
 				35,
-				36,
-				37,
+				38,
 				40,
-				42,
-				43
+				41
 			]
 		}
 	],
@@ -2055,8 +2040,8 @@
 				4,
 				5,
 				6,
-				7,
 				8,
+				9,
 				10,
 				11,
 				12,
@@ -2071,39 +2056,36 @@
 				21,
 				22,
 				23,
-				24,
 				25,
-				27,
+				26,
 				28,
-				30,
-				33,
-				34,
-				38,
+				31,
+				32,
+				36,
+				37,
 				39,
-				41,
+				42,
+				43,
 				44,
 				45,
-				46,
-				47,
-				48,
-				49
+				46
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				9,
-				26,
+				7,
+				24,
+				27,
 				29,
-				31,
-				32,
+				30,
+				33,
+				34,
 				35,
-				36,
-				37,
+				38,
 				40,
-				42,
-				43
+				41
 			]
 		}
 	],
@@ -2113,18 +2095,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "services/MFRC522_.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "services/MFRC522.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -2401,12 +2371,6 @@
 			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "/Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 1,
-			"path" : "/Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c",
 			"sourceGroupIndex" : 0
 		}
 	],

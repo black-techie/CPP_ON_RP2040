@@ -64,11 +64,6 @@ CMakeFiles/main.dir/main.cpp.obj: \
  /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
  /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
  /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
- /Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/services/MFRC522.h \
- /Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/services/MFRC522_.h \
- /Users/black/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
- /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
- /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/string \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/stringfwd.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/memoryfwd.h \

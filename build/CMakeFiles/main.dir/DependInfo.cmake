@@ -104,7 +104,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/Users/black/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/Users/black/pico-sdk/src/rp2_common/boot_stage2/include"
   "/Users/black/pico-sdk/src/rp2_common/hardware_i2c/include"
-  "/Users/black/pico-sdk/src/rp2_common/hardware_spi/include"
   )
 
 # The set of dependency files which are needed:
@@ -124,7 +123,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
-  "/Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_timer/timer.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_uart/uart.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj.d"
@@ -146,8 +144,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/black/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   "/Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/main.cpp" "CMakeFiles/main.dir/main.cpp.obj" "gcc" "CMakeFiles/main.dir/main.cpp.obj.d"
-  "/Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/services/MFRC522.cpp" "CMakeFiles/main.dir/services/MFRC522.cpp.obj" "gcc" "CMakeFiles/main.dir/services/MFRC522.cpp.obj.d"
-  "/Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/services/MFRC522_.cpp" "CMakeFiles/main.dir/services/MFRC522_.cpp.obj" "gcc" "CMakeFiles/main.dir/services/MFRC522_.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

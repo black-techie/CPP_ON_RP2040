@@ -583,30 +583,6 @@ Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
-Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.obj: Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.obj
-
-# target to build an object file
-Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-
-Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.i: Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.i
-
-# target to preprocess a source file
-Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-
-Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.s: Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.s
-
-# target to generate assembly for a file
-Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-
 Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.obj
 
@@ -1183,54 +1159,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-services/MFRC522.obj: services/MFRC522.cpp.obj
-.PHONY : services/MFRC522.obj
-
-# target to build an object file
-services/MFRC522.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/services/MFRC522.cpp.obj
-.PHONY : services/MFRC522.cpp.obj
-
-services/MFRC522.i: services/MFRC522.cpp.i
-.PHONY : services/MFRC522.i
-
-# target to preprocess a source file
-services/MFRC522.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/services/MFRC522.cpp.i
-.PHONY : services/MFRC522.cpp.i
-
-services/MFRC522.s: services/MFRC522.cpp.s
-.PHONY : services/MFRC522.s
-
-# target to generate assembly for a file
-services/MFRC522.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/services/MFRC522.cpp.s
-.PHONY : services/MFRC522.cpp.s
-
-services/MFRC522_.obj: services/MFRC522_.cpp.obj
-.PHONY : services/MFRC522_.obj
-
-# target to build an object file
-services/MFRC522_.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/services/MFRC522_.cpp.obj
-.PHONY : services/MFRC522_.cpp.obj
-
-services/MFRC522_.i: services/MFRC522_.cpp.i
-.PHONY : services/MFRC522_.i
-
-# target to preprocess a source file
-services/MFRC522_.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/services/MFRC522_.cpp.i
-.PHONY : services/MFRC522_.cpp.i
-
-services/MFRC522_.s: services/MFRC522_.cpp.s
-.PHONY : services/MFRC522_.s
-
-# target to generate assembly for a file
-services/MFRC522_.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/services/MFRC522_.cpp.s
-.PHONY : services/MFRC522_.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1293,9 +1221,6 @@ help:
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_pll/pll.s"
-	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.obj"
-	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.i"
-	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_spi/spi.s"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.i"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_sync/sync.s"
@@ -1368,12 +1293,6 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... services/MFRC522.obj"
-	@echo "... services/MFRC522.i"
-	@echo "... services/MFRC522.s"
-	@echo "... services/MFRC522_.obj"
-	@echo "... services/MFRC522_.i"
-	@echo "... services/MFRC522_.s"
 .PHONY : help
 
 
