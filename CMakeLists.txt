@@ -15,8 +15,6 @@ pico_sdk_init()
 
 add_executable  (   main   
                     main.cpp
-                    services/MFRC522_.cpp
-                    services/MFRC522.cpp
                 )
 
 # Pull in our pico_stdlib which pulls in commonl
@@ -24,7 +22,6 @@ add_executable  (   main
 target_link_libraries(  main 
                         pico_stdlib 
                         hardware_i2c
-                        hardware_spi
                     )
 
 #create map/bin/hex file etc

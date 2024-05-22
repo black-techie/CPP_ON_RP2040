@@ -52,7 +52,12 @@
         "typeinfo": "cpp"
     },
     "cSpell.words": [
+        "DIRA",
+        "eeprom",
+        "INAPAKIA",
         "PICC",
-        "uiduint"
-    ]
+        "uiduint",
+        "UJAZO"
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }
