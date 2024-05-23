@@ -48,6 +48,8 @@ CMakeFiles/main.dir/main.cpp.obj: \
  /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
  /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
  /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+ /Users/black/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h \
+ /Users/black/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
  /Users/black/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
@@ -64,6 +66,15 @@ CMakeFiles/main.dir/main.cpp.obj: \
  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/black/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/string.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/reent.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/_ansi.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_types.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/machine/_types.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/lock.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_locale.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/strings.h \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/string.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/iomanip \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/iosfwd \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/stringfwd.h \
@@ -71,13 +82,7 @@ CMakeFiles/main.dir/main.cpp.obj: \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/postypes.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/cwchar \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/wchar.h \
- /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/_ansi.h \
- /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/reent.h \
- /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_types.h \
- /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/machine/_types.h \
- /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/lock.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
- /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_locale.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/ios_base.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/ext/atomicity.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr.h \

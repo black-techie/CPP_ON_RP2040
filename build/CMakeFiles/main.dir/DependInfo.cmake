@@ -104,6 +104,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/Users/black/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/Users/black/pico-sdk/src/rp2_common/boot_stage2/include"
   "/Users/black/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "/Users/black/pico-sdk/src/rp2_common/hardware_flash/include"
   )
 
 # The set of dependency files which are needed:
@@ -119,6 +120,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/black/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/common/pico_util/queue.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/common/pico_util/queue.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
+  "/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "/Users/black/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"

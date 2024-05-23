@@ -479,6 +479,30 @@ Users/black/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : Users/black/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
+Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.obj: Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+
+# target to build an object file
+Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+
+Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.i: Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.i
+
+# target to preprocess a source file
+Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.s: Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.s
+
+# target to generate assembly for a file
+Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
 Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
 
@@ -1208,6 +1232,9 @@ help:
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
+	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.s"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"

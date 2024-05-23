@@ -22,6 +22,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
   "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+  "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+  "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
   "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
   "CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"

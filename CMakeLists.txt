@@ -22,6 +22,7 @@ add_executable  (   main
 target_link_libraries(  main 
                         pico_stdlib 
                         hardware_i2c
+                        hardware_flash
                     )
 
 #create map/bin/hex file etc

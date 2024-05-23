@@ -493,6 +493,43 @@ CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
+CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c \
+  generated/pico_base/pico/config_autogen.h \
+  generated/pico_base/pico/version.h \
+  /Users/black/pico-sdk/src/boards/include/boards/pico.h \
+  /Users/black/pico-sdk/src/common/pico_base/include/pico.h \
+  /Users/black/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /Users/black/pico-sdk/src/common/pico_base/include/pico/config.h \
+  /Users/black/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /Users/black/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h \
+  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h \
+  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h \
+  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h \
+  /Users/black/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /Users/black/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /Users/black/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h \
+  /Users/black/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h \
+  /Users/black/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/_ansi.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/_newlib_version.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/assert.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/machine/_default_types.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/machine/ieeefp.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/newlib.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/stdint.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_intsup.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_stdint.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/cdefs.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/config.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/features.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
 CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /Users/black/pico-sdk/src/rp2_common/hardware_gpio/gpio.c \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
@@ -1586,9 +1623,11 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
   /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
   /Users/black/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
   /Users/black/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /Users/black/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h \
   /Users/black/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
   /Users/black/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
   /Users/black/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /Users/black/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
   /Users/black/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
   /Users/black/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
   /Users/black/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
@@ -1725,6 +1764,8 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/stdint.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/stdio.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/stdlib.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/string.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/strings.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_intsup.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_locale.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_pthreadtypes.h \
@@ -1742,6 +1783,7 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/sched.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/select.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/stdio.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/string.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/timespec.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/types.h \
   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/time.h \
@@ -1865,6 +1907,10 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/basic_ios.h:
 
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/messages_members.h:
+
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/gthr.h:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/error_constants.h:
@@ -1872,16 +1918,6 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
 
 /Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/services/lcd_i2c.cpp:
-
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/_newlib_version.h:
-
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/strings.h:
-
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++locale.h:
-
-/Users/black/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c:
-
-/Users/black/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
 
 /Users/black/pico-sdk/src/rp2_common/hardware_uart/uart.c:
 
@@ -1917,8 +1953,6 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/unistd.h:
 
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/alloc_traits.h:
-
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/machine/time.h:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/atomic_word.h:
@@ -1949,11 +1983,15 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 
 /Users/black/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
 
+/Users/black/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h:
+
 /Users/black/pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
 
 /Users/black/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:
 
 /Users/black/pico-sdk/src/rp2_common/pico_double/double_init_rom.c:
+
+/Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
 
 /Users/black/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:
 
@@ -1991,10 +2029,6 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 
 /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
 
-/Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
-
-/Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
-
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/clocale:
 
 /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
@@ -2003,11 +2037,29 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 
 /Users/black/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:
 
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/char_traits.h:
+/Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
 
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_locale.h:
+/Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
 
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/array:
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/_newlib_version.h:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/strings.h:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++locale.h:
+
+/Users/black/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c:
+
+/Users/black/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
+
+/Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
+
+/Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h:
+
+/Users/black/pico-sdk/src/common/pico_util/pheap.c:
+
+/Users/black/pico-sdk/src/rp2_common/hardware_flash/flash.c:
 
 /Users/black/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h:
 
@@ -2067,6 +2119,8 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 
 /Users/black/pico-sdk/src/rp2_common/pico_double/double_math.c:
 
+/Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
+
 /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h:
@@ -2086,10 +2140,6 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
 
 /Users/black/pico-sdk/src/common/pico_time/timeout_helper.c:
-
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_intsup.h:
-
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/time_members.h:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/exception:
 
@@ -2117,11 +2167,15 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_timeval.h:
 
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/messages_members.h:
-
 /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/machine/types.h:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/char_traits.h:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/array:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_locale.h:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
 
@@ -2253,13 +2307,13 @@ CMakeFiles/main.dir/main.cpp.obj: /Users/black/Desktop/work/codes/cmake/CPP_ON_R
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_pthreadtypes.h:
 
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/time_members.h:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/_intsup.h:
+
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/sstream:
 
 /Users/black/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
-
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/ext/alloc_traits.h:
-
-/Users/black/pico-sdk/src/common/pico_util/pheap.c:
 
 /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
 
