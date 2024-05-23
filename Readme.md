@@ -6,4 +6,4 @@
 7. Run make
 8. Copy and paste the uf2 file > cp blink.uf2 /media/black/RPI-RP2/
 
-There you go! the source codes can be changed from from blink.c file
+There you go! the source codes can be changed from from main.c file

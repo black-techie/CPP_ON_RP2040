@@ -66,8 +66,4 @@ CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: 
  /Users/black/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
  /Users/black/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
  /Users/black/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
- /Users/black/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
- /Users/black/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
- /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
- /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
- /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
+ /Users/black/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h

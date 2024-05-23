@@ -1,0 +1,6 @@
+variables to store on flash memory
+    - calibration_factor
+    - Elapsed Hours
+    - Total coins
+    - Admin_A
+    - Admin_B

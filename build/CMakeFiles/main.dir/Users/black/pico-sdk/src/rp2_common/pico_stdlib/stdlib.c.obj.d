@@ -50,10 +50,14 @@ CMakeFiles/main.dir/Users/black/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /Users/black/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /Users/black/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /Users/black/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h \
  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h \
  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h \
  /Users/black/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
- /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
+ /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+ /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+ /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+ /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+ /Users/black/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h

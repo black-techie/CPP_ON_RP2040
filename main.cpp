@@ -6,16 +6,19 @@
 #include "pico/stdlib.h"
 #include <string.h>
 #include <iomanip>
+#include <iostream>
 
+using namespace std;
 
-const uint32_t flash_target_offset = 0x100000 - 4096; // Use the last sector
+const uint32_t flash_base_offset = 0x100000 - 4096; // Base offset for EEPROM storage
 const uint32_t flash_sector_size = 4096;
 const uint32_t flash_page_size = 256;
+const uint32_t flash_entry_size = sizeof(float); // Size of each entry
 
 int pulse_time = to_ms_since_boot(get_absolute_time());
 float pulses[5] = {0, 20.0, 40.0, 80.0, 200.0};
 int prices[5] = {0, 50, 100, 200, 500};
-unsigned long flow_rate = 0;
+int flow_rate = 0;
 int pulse = 0;
 
 void control_valve(bool dir)
@@ -24,18 +27,18 @@ void control_valve(bool dir)
     gpio_put(9, !dir);
 }
 
-void write_float_to_eeprom(float value)
+void write_float_to_eeprom(float value, uint32_t entry_index)
 {
-    uint32_t flash_offset = flash_target_offset;
+    uint32_t flash_offset = flash_base_offset + entry_index * flash_entry_size;
     uint32_t ints = save_and_disable_interrupts();
     flash_range_erase(flash_offset, flash_sector_size);
     flash_range_program(flash_offset, (uint8_t *)&value, sizeof(float));
     restore_interrupts(ints);
 }
 
-float read_float_from_eeprom()
+float read_float_from_eeprom(uint32_t entry_index)
 {
-    uint32_t flash_offset = flash_target_offset;
+    uint32_t flash_offset = flash_base_offset + entry_index * flash_entry_size;
     float value;
     memcpy(&value, (uint8_t *)(XIP_BASE + flash_offset), sizeof(float));
     return value;
@@ -54,12 +57,12 @@ void update_pulse(uint gpio, uint32_t events)
 
 void init_eeprom()
 {
-    // lcd_string(("SARAFU : " + std::to_string(calibration_factor) + "TSH").c_str());
-    // write_float_to_eeprom(7.12);
-    // read_float_from_eeprom();
+    write_float_to_eeprom(0.00f, 0);
+    write_float_to_eeprom(0.00f, 1);
+    write_float_to_eeprom(0.00f, 2);
+    write_float_to_eeprom(0.00f, 3);
+    write_float_to_eeprom(54.23f, 4);
 }
-
-float calibration_factor = read_float_from_eeprom();
 
 int main()
 {
@@ -69,14 +72,17 @@ int main()
     gpio_set_function(13, GPIO_FUNC_I2C);
     bi_decl(bi_2pins_with_func(12, 13, GPIO_FUNC_I2C));
 
+    gpio_init(7);
     gpio_init(8);
     gpio_init(9);
     gpio_init(10);
     gpio_init(11);
 
+    gpio_pull_up(7);
     gpio_pull_up(10);
     gpio_pull_up(11);
 
+    gpio_set_dir(7, GPIO_IN);
     gpio_set_dir(8, GPIO_OUT);
     gpio_set_dir(9, GPIO_OUT);
     gpio_set_dir(10, GPIO_IN);
@@ -115,6 +121,11 @@ int main()
     lcd_string("KUPATA MAJI WEKA");
     lcd_set_cursor(1, 0);
     lcd_string("     SARAFU");
+
+    float calibration_factor = read_float_from_eeprom(0);
+    unsigned long long threshold_millis = to_ms_since_boot(get_absolute_time());
+
+    cout << "Calibration Factor is :" << calibration_factor << endl;
 
     while (1)
     {
@@ -182,6 +193,74 @@ int main()
             lcd_string("KUPATA MAJI WEKA");
             lcd_set_cursor(1, 0);
             lcd_string("     SARAFU");
+        }
+
+        if (gpio_get(7) == false)
+        {
+            if (to_ms_since_boot(get_absolute_time()) - threshold_millis >= 5000)
+            {
+                lcd_clear();
+                lcd_set_cursor(0, 0);
+                lcd_string("      (+/-)   ");
+                lcd_set_cursor(1, 0);
+                float copy = calibration_factor;
+                std::ostringstream stream;
+                stream << std::fixed << std::setprecision(1) << calibration_factor;
+                std::string formatted_string = stream.str();
+                lcd_string(("CF = " + formatted_string + "  ").c_str());
+                unsigned long long exit_timer = to_ms_since_boot(get_absolute_time());
+                unsigned long long offset = to_ms_since_boot(get_absolute_time());
+                bool check = false;
+                while (to_ms_since_boot(get_absolute_time()) - exit_timer <= 5000)
+                {
+                    if (gpio_get(7) == false)
+                    {
+                        if (to_ms_since_boot(get_absolute_time()) - offset >= 200)
+                        {
+                            if (check)
+                            {
+                                if (calibration_factor <= 18)
+                                {
+                                    calibration_factor += 0.1;
+                                }
+                                else
+                                {
+                                    calibration_factor = 0.0;
+                                }
+                            }
+                            check = true;
+                            offset = to_ms_since_boot(get_absolute_time());
+                            exit_timer = to_ms_since_boot(get_absolute_time());
+                            lcd_set_cursor(1, 0);
+                            std::ostringstream stream;
+                            stream << std::fixed << std::setprecision(1) << calibration_factor;
+                            std::string formatted_string = stream.str();
+                            lcd_string(("CF = " + formatted_string + "  ").c_str());
+                        }
+                    }
+                    else
+                    {
+                        offset = to_ms_since_boot(get_absolute_time());
+                    }
+                }
+                if (copy != calibration_factor)
+                {
+                    lcd_clear();
+                    lcd_string("    SAVED !!");
+                    sleep_ms(500);
+                }
+                lcd_clear();
+                lcd_set_cursor(0, 0);
+                lcd_string("KUPATA MAJI WEKA");
+                lcd_set_cursor(1, 0);
+                lcd_string("     SARAFU");
+                write_float_to_eeprom(calibration_factor, 0);
+                threshold_millis = to_ms_since_boot(get_absolute_time());
+            }
+        }
+        else
+        {
+            threshold_millis = to_ms_since_boot(get_absolute_time());
         }
     }
 }

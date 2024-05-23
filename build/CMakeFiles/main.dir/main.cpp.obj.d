@@ -65,7 +65,7 @@ CMakeFiles/main.dir/main.cpp.obj: \
  /Users/black/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
  /Users/black/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/black/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
- /Users/black/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /Users/black/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/string.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/sys/reent.h \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/_ansi.h \
@@ -206,4 +206,5 @@ CMakeFiles/main.dir/main.cpp.obj: \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/ostream \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/ostream.tcc \
  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/istream.tcc \
- /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/sstream.tcc
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/bits/sstream.tcc \
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/arm-none-eabi/include/c++/10.3.1/iostream
