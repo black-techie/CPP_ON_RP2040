@@ -1,8 +1,9 @@
-1. Install cmake
-2. Download pico sdk from > https://github.com/raspberrypi/pico-sdk.git
-3. Create build dir 
-4. Inside build dir >export sdk path > $export  PICO_SDK_PATH=/home/usr/....
-5. Run cmake ..
+1. Install cmake and install tool chain
+2. sudo apt install -y gcc-arm-none-eabi
+3. Download pico sdk from > https://github.com/raspberrypi/pico-sdk.git
+4. Create build dir 
+5. Inside build dir >export sdk path > export  PICO_SDK_PATH=$HOME/pico-sdk
+6. Run cmake ..
 7. Run make
 8. Copy and paste the uf2 file > cp blink.uf2 /media/black/RPI-RP2/
 
