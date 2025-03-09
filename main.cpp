@@ -8,11 +8,14 @@
 #include <iomanip>
 #include <iostream>
 
+
+#define dsp_scl  13
+#define dsp_sda  12
 #define coin_pin 11
 #define flow_pin 10
-#define motor_a 9
-#define motor_b 8
-#define cal_pin 7
+#define motor_a   9
+#define motor_b   8
+#define cal_pin   7
 
 using namespace std;
 
