@@ -8,6 +8,12 @@
 #include <iomanip>
 #include <iostream>
 
+#define coin_pin 11
+#define flow_pin 10
+#define motor_a 9
+#define motor_b 8
+#define cal_pin 7
+
 using namespace std;
 
 const uint32_t flash_base_offset = 0x100000 - 4096; // Base offset for EEPROM storage
@@ -16,7 +22,7 @@ const uint32_t flash_page_size = 256;
 const uint32_t flash_entry_size = sizeof(float); // Size of each entry
 
 int pulse_time = to_ms_since_boot(get_absolute_time());
-float pulses[5] = {0, 20.0, 40.0, 80.0, 200.0};
+float pulses[5] = {0, 5.0, 10.0, 20.0, 50.0};
 int prices[5] = {0, 50, 100, 200, 500};
 int flow_rate = 0;
 int pulse = 0;
