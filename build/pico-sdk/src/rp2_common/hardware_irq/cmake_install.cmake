@@ -1,4 +1,4 @@
-# Install script for directory: /home/willbroad/pico-sdk/src/rp2_common/hardware_irq
+# Install script for directory: /home/black/pico-sdk/src/rp2_common/hardware_irq
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

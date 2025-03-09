@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.13)
 
 # pull in PICO SDK (must be before project)
 include(pico_sdk_import.cmake)
 
-project(blink C CXX ASM)
+project(prepaid_water_meter C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
@@ -13,16 +13,20 @@ set(PICO_EXAMPLES_PATH ${PROJECT_SOURCE_DIR})
 # Initialize the SDK
 pico_sdk_init()
 
-add_executable(blink
-                blink.c
+add_executable  (   main   
+                    main.cpp
                 )
 
 # Pull in our pico_stdlib which pulls in commonl
-target_link_libraries(blink pico_stdlib)
+
+target_link_libraries(  main 
+                        pico_stdlib 
+                        hardware_i2c
+                        hardware_flash
+                    )
 
 #create map/bin/hex file etc
-pico_add_extra_outputs(blink)
+pico_add_extra_outputs(main)
+pico_enable_stdio_usb(main 1)
+pico_enable_stdio_uart(main 0)
 
-
-#remember to export your sdk Path
-# $ export  PICO_SDK_PATH=/home/usr/.... 
