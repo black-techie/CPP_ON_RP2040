@@ -32,8 +32,8 @@ int pulse = 0;
 
 void control_valve(bool dir)
 {
-    gpio_put(8, dir);
-    gpio_put(9, !dir);
+    gpio_put(motor_b, dir);
+    gpio_put(motor_a, !dir);
 }
 
 void write_float_to_eeprom(float value, uint32_t entry_index)
@@ -77,28 +77,28 @@ int main()
 {
     stdio_init_all();
     i2c_init(i2c_default, 100 * 1000);
-    gpio_set_function(12, GPIO_FUNC_I2C);
-    gpio_set_function(13, GPIO_FUNC_I2C);
-    bi_decl(bi_2pins_with_func(12, 13, GPIO_FUNC_I2C));
+    gpio_set_function(dsp_sda, GPIO_FUNC_I2C);
+    gpio_set_function(dsp_scl, GPIO_FUNC_I2C);
+    bi_decl(bi_2pins_with_func(dsp_sda, dsp_scl, GPIO_FUNC_I2C));
 
-    gpio_init(7);
-    gpio_init(8);
-    gpio_init(9);
-    gpio_init(10);
-    gpio_init(11);
+    gpio_init(cal_pin);
+    gpio_init(motor_b);
+    gpio_init(motor_a);
+    gpio_init(flow_pin);
+    gpio_init(coin_pin);
 
-    gpio_pull_up(7);
-    gpio_pull_up(10);
-    gpio_pull_up(11);
+    gpio_pull_up(cal_pin);
+    gpio_pull_up(flow_pin);
+    gpio_pull_up(coin_pin);
 
-    gpio_set_dir(7, GPIO_IN);
-    gpio_set_dir(8, GPIO_OUT);
-    gpio_set_dir(9, GPIO_OUT);
-    gpio_set_dir(10, GPIO_IN);
-    gpio_set_dir(11, GPIO_IN);
+    gpio_set_dir(cal_pin, GPIO_IN);
+    gpio_set_dir(motor_b, GPIO_OUT);
+    gpio_set_dir(motor_a, GPIO_OUT);
+    gpio_set_dir(flow_pin, GPIO_IN);
+    gpio_set_dir(coin_pin, GPIO_IN);
 
-    gpio_set_irq_enabled_with_callback(10, GPIO_IRQ_EDGE_FALL, false, &update_flowrate);
-    gpio_set_irq_enabled_with_callback(11, GPIO_IRQ_EDGE_FALL, true, &update_pulse);
+    gpio_set_irq_enabled_with_callback(flow_pin, GPIO_IRQ_EDGE_FALL, false, &update_flowrate);
+    gpio_set_irq_enabled_with_callback(coin_pin, GPIO_IRQ_EDGE_FALL, true, &update_pulse);
 
     lcd_init();
     lcd_clear();
@@ -131,10 +131,10 @@ int main()
     lcd_set_cursor(1, 0);
     lcd_string("     SARAFU");
 
-    float calibration_factor = read_float_from_eeprom(0);
+    float calibration_factor = 1.01;//read_float_from_eeprom(0);
     unsigned long long threshold_millis = to_ms_since_boot(get_absolute_time());
 
-    cout << "Calibration Factor is :" << calibration_factor << endl;
+    // cout << "Calibration Factor is :" << calibration_factor << endl;
 
     while (1)
     {
@@ -145,8 +145,8 @@ int main()
                 break;
             }
 
-            gpio_set_irq_enabled_with_callback(11, GPIO_IRQ_EDGE_FALL, false, &update_pulse);
-            gpio_set_irq_enabled_with_callback(10, GPIO_IRQ_EDGE_FALL, true, &update_flowrate);
+            gpio_set_irq_enabled_with_callback(coin_pin, GPIO_IRQ_EDGE_FALL, false, &update_pulse);
+            gpio_set_irq_enabled_with_callback(flow_pin, GPIO_IRQ_EDGE_FALL, true, &update_flowrate);
 
             unsigned long long int refresh_millis = to_ms_since_boot(get_absolute_time());
             unsigned long long int flowrate_millis = to_ms_since_boot(get_absolute_time());
@@ -188,8 +188,8 @@ int main()
             }
             control_valve(0);
 
-            gpio_set_irq_enabled_with_callback(10, GPIO_IRQ_EDGE_FALL, false, &update_flowrate);
-            gpio_set_irq_enabled_with_callback(11, GPIO_IRQ_EDGE_FALL, true, &update_pulse);
+            gpio_set_irq_enabled_with_callback(flow_pin, GPIO_IRQ_EDGE_FALL, false, &update_flowrate);
+            gpio_set_irq_enabled_with_callback(coin_pin, GPIO_IRQ_EDGE_FALL, true, &update_pulse);
 
             pulse = 0;
             lcd_clear();
@@ -204,7 +204,7 @@ int main()
             lcd_string("     SARAFU");
         }
 
-        if (gpio_get(7) == false)
+        if (gpio_get(cal_pin) == false)
         {
             if (to_ms_since_boot(get_absolute_time()) - threshold_millis >= 5000)
             {
@@ -222,7 +222,7 @@ int main()
                 bool check = false;
                 while (to_ms_since_boot(get_absolute_time()) - exit_timer <= 5000)
                 {
-                    if (gpio_get(7) == false)
+                    if (gpio_get(cal_pin) == false)
                     {
                         if (to_ms_since_boot(get_absolute_time()) - offset >= 200)
                         {
@@ -263,7 +263,7 @@ int main()
                 lcd_string("KUPATA MAJI WEKA");
                 lcd_set_cursor(1, 0);
                 lcd_string("     SARAFU");
-                write_float_to_eeprom(calibration_factor, 0);
+                // write_float_to_eeprom(calibration_factor, 0);
                 threshold_millis = to_ms_since_boot(get_absolute_time());
             }
         }
