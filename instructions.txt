@@ -7,3 +7,46 @@
 8. Copy and paste the uf2 file > cp blink.uf2 /media/black/RPI-RP2/
 
 There you go! the source codes can be changed from from blink.c file
+
+
+
+1. installing cmake 
+    sudo apt update
+
+sudo apt install -y \
+    cmake \
+    gcc-arm-none-eabi \
+    build-essential \
+    git \
+    libnewlib-arm-none-eabi
+
+
+2. pico sdk
+sudo apt update
+
+sudo apt install -y \
+    cmake \
+    gcc-arm-none-eabi \
+    build-essential \
+    git \
+    libnewlib-arm-none-eabi
+
+3. set sdk path
+    export PICO_SDK_PATH=$HOME/pico/pico-sdk
+
+4. or permanent sdk path
+    echo 'export PICO_SDK_PATH=$HOME/pico/pico-sdk' >> ~/.bashrc
+    source ~/.bashrc
+
+5. install pico tool
+    cd ~/pico
+
+    git clone https://github.com/raspberrypi/picotool.git
+    cd picotool
+
+    mkdir build
+    cd build
+
+    cmake ..
+    make -j$(nproc)
+    sudo make install

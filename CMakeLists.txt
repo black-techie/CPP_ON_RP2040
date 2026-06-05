@@ -25,6 +25,8 @@ target_link_libraries(  main
                         pico_stdlib 
                         hardware_i2c
                         hardware_spi
+                        hardware_sync
+                        hardware_flash
                     )
 
 #create map/bin/hex file etc

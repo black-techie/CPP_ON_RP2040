@@ -62,6 +62,9 @@ CMakeFiles/main.dir/main.cpp.o: \
  /home/black/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/black/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /home/black/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /home/black/pico/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h \
+ /home/black/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+ /home/black/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
  /home/black/Desktop/work/software/CPP_ON_RP2040/services/lcd_i2c.cpp \
  /home/black/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
  /home/black/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
@@ -146,4 +149,6 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/newlib/c++/14.2.1/cstddef \
  /usr/include/newlib/c++/14.2.1/bits/uses_allocator.h \
  /usr/include/newlib/c++/14.2.1/bits/uses_allocator_args.h \
- /usr/include/newlib/c++/14.2.1/tuple
+ /usr/include/newlib/c++/14.2.1/tuple \
+ /usr/include/newlib/c++/14.2.1/cstring /usr/include/newlib/string.h \
+ /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h

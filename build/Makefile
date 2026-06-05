@@ -527,6 +527,30 @@ home/black/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 
+home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o
+
+# target to build an object file
+home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+
+home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
+
+# target to preprocess a source file
+home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s
+
+# target to generate assembly for a file
+home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
 home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o
 
@@ -822,6 +846,30 @@ home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/black
 home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o
+
+# target to build an object file
+home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+
+home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i
+
+# target to preprocess a source file
+home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+
+home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s
+
+# target to generate assembly for a file
+home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o
@@ -1574,6 +1622,9 @@ help:
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o"
+	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o"
+	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
@@ -1611,6 +1662,9 @@ help:
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
+	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o"
+	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i"
+	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
 	@echo "... home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"

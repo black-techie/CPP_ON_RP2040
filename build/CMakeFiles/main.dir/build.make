@@ -929,6 +929,34 @@ CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/black/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/black/Desktop/work/software/CPP_ON_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
+
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/black/Desktop/work/software/CPP_ON_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
+
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c > CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+
+CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c -o CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
@@ -992,7 +1020,9 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o" \
 "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o" \
 "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o" \
-"CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o"
+"CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o" \
+"CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o" \
+"CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -1059,11 +1089,13 @@ main.elf: CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/pico_stdio
 main.elf: CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 main.elf: CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
 main.elf: CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
+main.elf: CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+main.elf: CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 main.elf: CMakeFiles/main.dir/build.make
 main.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 main.elf: /home/black/pico/pico-sdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 main.elf: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/black/Desktop/work/software/CPP_ON_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Linking CXX executable main.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/black/Desktop/work/software/CPP_ON_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Linking CXX executable main.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h /home/black/Desktop/work/software/CPP_ON_RP2040/build/main.elf > main.dis
 	/usr/bin/arm-none-eabi-objdump -d /home/black/Desktop/work/software/CPP_ON_RP2040/build/main.elf >> main.dis

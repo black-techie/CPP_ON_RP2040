@@ -136,6 +136,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/black/pico/pico-sdk/src/rp2040/boot_stage2/include"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_spi/include"
+  "/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/include"
+  "/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/include"
   )
 
 # The set of dependency files which are needed:
@@ -153,6 +155,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/black/pico/pico-sdk/src/rp2040/pico_platform/platform.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d"
+  "/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d"
@@ -165,6 +168,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d"
+  "/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o.d"
   "/home/black/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o" "gcc" "CMakeFiles/main.dir/home/black/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o.d"
