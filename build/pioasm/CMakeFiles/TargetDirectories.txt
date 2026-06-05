@@ -1,3 +1,0 @@
-/Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/build/pioasm/CMakeFiles/pioasm.dir
-/Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/build/pioasm/CMakeFiles/edit_cache.dir
-/Users/black/Desktop/work/codes/cmake/CPP_ON_RP2040/build/pioasm/CMakeFiles/rebuild_cache.dir
